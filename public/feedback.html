@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Feedback | Event Feedback System</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">📋 EventFeedback</span>
+    <a href="/index.html">Home</a>
+    <a href="/events.html">Events</a>
+    <a href="/feedback.html" class="active">Feedback</a>
+    <a href="/feedback-list.html">View Feedback</a>
+  </nav>
+
+  <main>
+    <h1>Submit Your Feedback</h1>
+
+    <div id="formMessage" class="message"></div>
+
+    <div class="card">
+      <form id="feedbackForm" novalidate>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </div>
+
+        <div>
+          <label for="event">Event</label>
+          <select id="event" name="event">
+            <option value="">-- Select an event --</option>
+            <option value="Tech Innovators Summit">Tech Innovators Summit</option>
+            <option value="Campus Coding Bootcamp">Campus Coding Bootcamp</option>
+            <option value="Career & Internship Fair">Career & Internship Fair</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="rating">Rating (1–5)</label>
+          <select id="rating" name="rating">
+            <option value="">-- Select a rating --</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Below Average</option>
+            <option value="1">1 - Poor</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Your Feedback</label>
+          <textarea id="message" name="message" placeholder="Tell us about your experience..."></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>Event Feedback Management System &copy; 2026</footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
