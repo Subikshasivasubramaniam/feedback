@@ -79,10 +79,3 @@ event-feedback-system/
 | POST | `/api/feedback` | Submits new feedback (`name`, `email`, `event`, `rating`, `message`) |
 | GET | `/api/feedback` | Returns all feedback, newest first |
 
-## Notes for Your Internship Submission
-
-- This is a working baseline — feel free to extend it (e.g., add an admin
-  delete route, filter feedback by event, add authentication) to go beyond
-  the minimum requirements.
-- If asked to demo, walk through the flow in the "Testing the Full Flow"
-  section above — it maps directly to the 5 levels in the project brief.
